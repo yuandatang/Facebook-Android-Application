@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tyd.myapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="52dp"
+        android:text="Enter a keyword:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        android:id="@+id/textView3" />
+
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="23dp"
+        android:onClick="setClearButton"
+        android:text="CLEAR"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="23dp"
+        android:onClick="sendMessage"
+        android:text="SEARCH"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginEnd="9dp" />
+
+    <EditText
+        android:id="@+id/inputText"
+        style="@style/edit"
+        android:layout_width="341dp"
+        android:layout_height="37dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="103dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="9dp" />
+</android.support.constraint.ConstraintLayout>
